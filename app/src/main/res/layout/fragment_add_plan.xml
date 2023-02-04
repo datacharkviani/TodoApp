@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".fragments.add.AddPlan"
+    android:background="@drawable/background_update"
+    >
+
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="341dp"
+        android:layout_height="69dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="@string/title_edit_text"
+        />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="339dp"
+        android:layout_height="63dp"
+        android:ems="10"
+        android:hint="@string/description_edit_text"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <Switch
+        android:id="@+id/planStatusSwitch"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
+        android:text="@string/done_switch"
+        android:textSize="16sp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addPlanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_add"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/todo"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+</LinearLayout>

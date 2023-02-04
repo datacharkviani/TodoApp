@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="log_in_button">Log in</string>
+    <string name="password_hint">Password</string>
+    <string name="todo">todo</string>
+    <string name="name_hint">Name</string>
+    <string name="e_mail_hint">E-mail</string>
+    <string name="login_button">Login</string>
+    <string name="register_text_view">Register</string>
+    <string name="registration_button">Registration</string>
+    <string name="password_int">Password</string>
+    <string name="description_edit_text">Description</string>
+    <string name="description_text_view">Description</string>
+    <string name="number_1">1.</string>
+    <string name="status_text_view">Status</string>
+    <string name="title_edit_text">Title</string>
+    <string name="done_switch">Done</string>
+    <string name="update_button">Update</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="name_text_view">Username</string>
+</resources>

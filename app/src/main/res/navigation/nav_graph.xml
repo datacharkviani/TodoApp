@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/toDoList">
+    <fragment
+        android:id="@+id/toDoList"
+        android:name="com.example.todoapp.fragments.list.ToDoList"
+        android:label="Todo List"
+        tools:layout="@layout/fragment_to_do_list" >
+        <action
+            android:id="@+id/action_toDoList_to_addPlan"
+            app:destination="@id/addPlan" />
+        <action
+            android:id="@+id/action_toDoList_to_updatePlan"
+            app:destination="@id/updatePlan" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlan"
+        android:name="com.example.todoapp.fragments.add.AddPlan"
+        android:label="Add Plan"
+        tools:layout="@layout/fragment_add_plan" >
+        <action
+            android:id="@+id/action_addPlan_to_toDoList"
+            app:destination="@id/toDoList" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePlan"
+        android:name="com.example.todoapp.fragments.update.UpdatePlan"
+        android:label="Update Plan"
+        tools:layout="@layout/fragment_update_plan" >
+        <action
+            android:id="@+id/action_updatePlan_to_toDoList"
+            app:destination="@id/toDoList" />
+        <argument
+            android:name="currentPlan"
+            app:argType="com.example.todoapp.model.Plan" />
+    </fragment>
+</navigation>
